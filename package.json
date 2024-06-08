@@ -1,9 +1,10 @@
 {
   "name": "slozhno-sosredotochitsya",
   "version": "1.0.0",
+  "description": "https://github.com/drwnddrm/slozhno-sosredotochitsya.git",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "echo 'Привет!'",
     "check": "prettier --check './src/**/*.{html,css,js}'",
     "format": "prettier --write './src/**/*.{html,css,js}'",
     "lint": "stylelint './src/**/*.css'",
@@ -13,9 +14,7 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "gulp": "^5.0.0",
     "prettier": "^3.3.1",
     "stylelint": "^16.6.1"
   }
