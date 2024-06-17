@@ -1,12 +1,44 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-color: #000028;
+  --accent-color: #ff0070;
+  --paragraph-color: #f1b2ce;
+  --btn-color: #ff0070;
+  --btn-opacity-color: #f1b2ce66;
+  --title-color: #db00ff;
+  --heading-color: #000028;
+  --heading-element-color: #ff0070;
+  background-image: url("../images/cover-image-dark.png");
+}
+
+.page.theme_dark .header__decoration-element {
+  content: '';
+  position: absolute;
+  top: 10px;
+  box-sizing: border-box;
+  margin-inline-start: calc(100% - 81px);
+  color: var(--btn-color);
+  font-size: 18px;
+}
+
+.page.theme_dark .header__decoration-element::before {
+  content: 'REC';
+}
+
+.page.theme_dark .header__decoration-element::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  margin-inline-start: calc(100% - 22px);
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--btn-color);
+  background-color: var(--btn-color);
+  block-size: 9px;
+  inline-size: 9px;
+}
+
+@media (769px > width > 476px) {
+  .page.theme_dark .header__decoration-element {
+    margin-inline-start: calc(100% - 80px);
+    margin-block-start: 12px;
+  }
 }

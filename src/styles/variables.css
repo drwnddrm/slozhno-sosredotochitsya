@@ -1,4 +1,10 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --bg-color: #000028;
+  --accent-color: #ff0070;
+  --paragraph-color: #f1b2ce;
+  --btn-color: #ff0070;
+  --btn-opacity-color: #f1b2ce66;
+  --title-color: #db00ff;
+  --heading-color: #000028;
+  --heading-element-color: #ff0070;
+}
