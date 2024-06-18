@@ -7,7 +7,6 @@
   --title-color: #ffc2e6;
   --heading-color: #353430;
   --heading-element-color: #353430; 
-
   background-image: url("../images/cover-image-light.png");
 }
 
@@ -30,16 +29,5 @@
 
   .page.theme_auto .header__decoration-element {
     display: none;
-  }
-}
-
-@media (769px > width > 476px) {
-  .page.theme_light .header__decoration-element {
-    margin-inline-start: calc(100% - 80px);
-    margin-block-start: 12px;
-  }
-  .page.theme_auto .header__decoration-element {
-    margin-inline-start: calc(100% - 80px);
-    margin-block-start: 12px;
   }
 }
