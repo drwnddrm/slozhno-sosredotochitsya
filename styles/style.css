@@ -441,6 +441,7 @@
   }
 
   .article__header {
+    color: var(--heading-color);
     margin-block-end: 20px;
   }
   
